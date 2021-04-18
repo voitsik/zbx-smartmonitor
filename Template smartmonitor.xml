@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>5.0</version>
-    <date>2020-12-17T07:27:23Z</date>
+    <date>2021-04-18T21:32:55Z</date>
     <groups>
         <group>
             <name>Templates Users</name>
@@ -84,7 +84,7 @@
                             <preprocessing>
                                 <step>
                                     <type>JAVASCRIPT</type>
-                                    <params>return value.replace(/\s\(.+\)|\s\[.+\]|[\u00A0]/g, '')    // Deleting data in brackets and spaces</params>
+                                    <params>return value.replace(/\s\(.+\)|\s\[.+\]|[\u00A0]|,/g, '')    // Deleting data in brackets and spaces</params>
                                 </step>
                             </preprocessing>
                             <trigger_prototypes>
